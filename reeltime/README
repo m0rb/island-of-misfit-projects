@@ -1,0 +1,13 @@
+reeltime - a sh(1) and gpioctl(1) based mechanical score reel clock
+
+This started out as a simple test of what could be done with a barebones
+FreeBSD/ARM installation on the RaspberryPi. It ended up getting stuffed
+into a gutted 1970 Gottlieb "Baseball" backbox with a transformer from some
+random fax machine and a opto-isolated relay bank. 
+
+This was originally written for GNU/Linux, bash3, and WiringPi's 'gpio' binary. 
+Said script was scrapped in favor of this "POSIX compliant" version. *cough*
+Since the game is from the dawn of UNIX time, I decided to stick with an actual
+UNIX descendant for nostalgia's sake.
+
+						--chris

@@ -1,0 +1,17 @@
+#!/bin/sh
+# reeltime - sh(1) and gpioctl(1) based mechanical score reel clock
+# 11/15/14 - by chris@cataclysmal.org
+[ $DEBUG ] && set -x
+. include.sh
+### gpio i/o pin settings
+INPUT_START=25
+INPUT_END=22
+OUTPUT_START=7
+OUTPUT_END=10
+ZM=0; ZH=0
+
+setup || exit 1
+zero_all && settime
+while :;
+do sloop && gotime
+done
